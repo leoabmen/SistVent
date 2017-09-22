@@ -1,0 +1,9 @@
+C:\Leonel\SISCOMIC DESKTOP\BusClases\bin\Debug\BusClases.dll
+C:\Leonel\SISCOMIC DESKTOP\BusClases\bin\Debug\BusClases.pdb
+C:\Leonel\SISCOMIC DESKTOP\BusClases\bin\Debug\DatClases.dll
+C:\Leonel\SISCOMIC DESKTOP\BusClases\bin\Debug\EntClases.dll
+C:\Leonel\SISCOMIC DESKTOP\BusClases\bin\Debug\DatClases.pdb
+C:\Leonel\SISCOMIC DESKTOP\BusClases\bin\Debug\EntClases.pdb
+C:\Leonel\SISCOMIC DESKTOP\BusClases\obj\Debug\BusClases.csprojResolveAssemblyReference.cache
+C:\Leonel\SISCOMIC DESKTOP\BusClases\obj\Debug\BusClases.dll
+C:\Leonel\SISCOMIC DESKTOP\BusClases\obj\Debug\BusClases.pdb

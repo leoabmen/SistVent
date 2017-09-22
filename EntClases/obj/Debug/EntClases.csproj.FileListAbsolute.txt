@@ -1,0 +1,7 @@
+C:\Leonel\SISCOMIC DESKTOP\EntClases\bin\Debug\EntClases.dll
+C:\Leonel\SISCOMIC DESKTOP\EntClases\bin\Debug\EntClases.pdb
+C:\Leonel\SISCOMIC DESKTOP\EntClases\bin\Debug\DatClases.dll
+C:\Leonel\SISCOMIC DESKTOP\EntClases\bin\Debug\DatClases.pdb
+C:\Leonel\SISCOMIC DESKTOP\EntClases\obj\Debug\EntClases.csprojResolveAssemblyReference.cache
+C:\Leonel\SISCOMIC DESKTOP\EntClases\obj\Debug\EntClases.dll
+C:\Leonel\SISCOMIC DESKTOP\EntClases\obj\Debug\EntClases.pdb
