@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button btnEditar;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarPrecio));
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblClaveProducto = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.HidIdProducto = new System.Windows.Forms.Label();
+            this.hidIdPrecio = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevoPrecio = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblBanderaNuevo = new System.Windows.Forms.Label();
             this.tbcPrecios = new System.Windows.Forms.TabControl();
@@ -60,6 +61,7 @@
             this.colPrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            btnEditar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tbcPrecios.SuspendLayout();
@@ -69,6 +71,21 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistoricoPrecio)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnEditar
+            // 
+            btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnEditar.FlatAppearance.BorderSize = 0;
+            btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            btnEditar.Location = new System.Drawing.Point(266, 394);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new System.Drawing.Size(72, 40);
+            btnEditar.TabIndex = 10;
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // panel2
             // 
@@ -100,66 +117,70 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Producto:";
             // 
-            // HidIdProducto
+            // hidIdPrecio
             // 
-            this.HidIdProducto.AutoSize = true;
-            this.HidIdProducto.Location = new System.Drawing.Point(-2, 0);
-            this.HidIdProducto.Name = "HidIdProducto";
-            this.HidIdProducto.Size = new System.Drawing.Size(62, 13);
-            this.HidIdProducto.TabIndex = 0;
-            this.HidIdProducto.Text = "HidIdPrecio";
-            this.HidIdProducto.Visible = false;
+            this.hidIdPrecio.AutoSize = true;
+            this.hidIdPrecio.Location = new System.Drawing.Point(3, 0);
+            this.hidIdPrecio.Name = "hidIdPrecio";
+            this.hidIdPrecio.Size = new System.Drawing.Size(60, 13);
+            this.hidIdPrecio.TabIndex = 0;
+            this.hidIdPrecio.Text = "hidIdPrecio";
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(6, 411);
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(10, 394);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(66, 40);
             this.btnCancelar.TabIndex = 5;
-            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(421, 411);
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(363, 394);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 40);
             this.btnGuardar.TabIndex = 6;
-            this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevoPrecio
             // 
-            this.btnNuevoPrecio.Location = new System.Drawing.Point(567, 411);
+            this.btnNuevoPrecio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNuevoPrecio.FlatAppearance.BorderSize = 0;
+            this.btnNuevoPrecio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnNuevoPrecio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnNuevoPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoPrecio.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoPrecio.Image")));
+            this.btnNuevoPrecio.Location = new System.Drawing.Point(613, 394);
             this.btnNuevoPrecio.Name = "btnNuevoPrecio";
-            this.btnNuevoPrecio.Size = new System.Drawing.Size(114, 23);
+            this.btnNuevoPrecio.Size = new System.Drawing.Size(68, 40);
             this.btnNuevoPrecio.TabIndex = 9;
-            this.btnNuevoPrecio.Text = "Nuevo Precio";
             this.btnNuevoPrecio.UseVisualStyleBackColor = true;
             this.btnNuevoPrecio.Click += new System.EventHandler(this.btnNuevoPrecio_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(287, 411);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(94, 23);
-            this.btnEditar.TabIndex = 10;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lblBanderaNuevo);
             this.panel1.Controls.Add(this.tbcPrecios);
-            this.panel1.Controls.Add(this.btnEditar);
+            this.panel1.Controls.Add(btnEditar);
             this.panel1.Controls.Add(this.btnNuevoPrecio);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.HidIdProducto);
+            this.panel1.Controls.Add(this.hidIdPrecio);
             this.panel1.Location = new System.Drawing.Point(12, 42);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(708, 477);
@@ -174,7 +195,6 @@
             this.lblBanderaNuevo.Size = new System.Drawing.Size(89, 13);
             this.lblBanderaNuevo.TabIndex = 12;
             this.lblBanderaNuevo.Text = "lblBanderaNuevo";
-            this.lblBanderaNuevo.Visible = false;
             // 
             // tbcPrecios
             // 
@@ -374,6 +394,7 @@
             this.colPrecioId.DataPropertyName = "PREC_ID";
             this.colPrecioId.HeaderText = "ID";
             this.colPrecioId.Name = "colPrecioId";
+            this.colPrecioId.ReadOnly = true;
             this.colPrecioId.Visible = false;
             // 
             // colProducto
@@ -381,12 +402,14 @@
             this.colProducto.DataPropertyName = "PREC_PROD_ID";
             this.colProducto.HeaderText = "Producto";
             this.colProducto.Name = "colProducto";
+            this.colProducto.ReadOnly = true;
             // 
             // colPrecioCosto
             // 
             this.colPrecioCosto.DataPropertyName = "PREC_COSTO";
             this.colPrecioCosto.HeaderText = "Precio de Compra";
             this.colPrecioCosto.Name = "colPrecioCosto";
+            this.colPrecioCosto.ReadOnly = true;
             this.colPrecioCosto.Width = 120;
             // 
             // colPrecioVenta
@@ -394,6 +417,7 @@
             this.colPrecioVenta.DataPropertyName = "PREC_VENTA";
             this.colPrecioVenta.HeaderText = "Precio de Venta";
             this.colPrecioVenta.Name = "colPrecioVenta";
+            this.colPrecioVenta.ReadOnly = true;
             this.colPrecioVenta.Width = 120;
             // 
             // colFechaInicio
@@ -401,6 +425,7 @@
             this.colFechaInicio.DataPropertyName = "PREC_FECH_INIC";
             this.colFechaInicio.HeaderText = "Fecha de Inicio";
             this.colFechaInicio.Name = "colFechaInicio";
+            this.colFechaInicio.ReadOnly = true;
             this.colFechaInicio.Width = 120;
             // 
             // colFechaFin
@@ -408,6 +433,7 @@
             this.colFechaFin.DataPropertyName = "PREC_FECH_FIN";
             this.colFechaFin.HeaderText = "Fecha de Fin";
             this.colFechaFin.Name = "colFechaFin";
+            this.colFechaFin.ReadOnly = true;
             this.colFechaFin.Width = 120;
             // 
             // AgregarPrecio
@@ -443,11 +469,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lblClaveProducto;
-        public System.Windows.Forms.Label HidIdProducto;
+        public System.Windows.Forms.Label hidIdPrecio;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevoPrecio;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblBanderaNuevo;
         private System.Windows.Forms.TabControl tbcPrecios;

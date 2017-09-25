@@ -21,3 +21,26 @@ C:\Leonel\SISCOMIC DESKTOP\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.csproj.Ge
 C:\Leonel\SISCOMIC DESKTOP\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.exe
 C:\Leonel\SISCOMIC DESKTOP\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.pdb
 C:\Leonel\SISCOMIC DESKTOP\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.CodigoBarrasViewer.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\SISCOMIC DESKTOP.exe.config
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.exe
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\SISCOMIC DESKTOP.exe
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\SISCOMIC DESKTOP.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\BusClases.dll
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\DatClases.dll
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\EntClases.dll
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\BusClases.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\DatClases.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\bin\Debug\EntClases.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.csprojResolveAssemblyReference.cache
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.AgregarPrecio.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.AltaProductos.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Login.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Menu.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Productos.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Properties.Resources.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.CodigoBarrasViewer.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.StockProductos.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Venta_de_Contado.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Ventas.resources
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.csproj.GenerateResource.Cache

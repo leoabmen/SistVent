@@ -23,7 +23,8 @@ namespace SISCOMIC_DESKTOP
             dtFechaFin.Text = fechaAño.ToShortDateString();
         }
         private void AgregarPrecio_Load(object sender, EventArgs e)
-        { 
+        {
+            //dtFechaInicio.Enabled = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -45,18 +46,30 @@ namespace SISCOMIC_DESKTOP
                     dtFechaFin.Text = fechaAño.ToShortDateString();
                     return;
                 }
-                if (dtFechaInicio.Value < fechaHoy)
+                if (dtFechaInicio.Value < fechaHoy && hidIdPrecio.Text == "")//Valida que la fecha de inicio no sea menor a la fecha de hoy en la Alta del precio. AAML-23/09/2017-Inicio
                 {
                     MessageBox.Show("Error: La fecha de inicio no puede ser menor a la fecha de Hoy. ", "¡ Error !", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     dtFechaInicio.Text = fechaHoy.ToShortDateString();
                     return;
                 }
-                if (HidIdProducto.Text == "" && lblBanderaNuevo.Text != "N" || HidIdProducto.Text != "" && lblBanderaNuevo.Text == "N")
+                if (dtFechaInicio.Value > fechaHoy && hidIdPrecio.Text == "")//Valida que la fecha de inicio no sea mayor a la fecha de hoy en la Alta del precio. AAML-23/09/2017-Inicio
+                {
+                    MessageBox.Show("Error: Para asignar el precio por primera vez al producto,"+"\n"+"La fecha de inicio no puede ser mayor a la fecha de Hoy.", "¡ Error !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    dtFechaInicio.Text = fechaHoy.ToShortDateString();
+                    return;
+                }
+                if (dtFechaInicio.Value < fechaHoy)//Valida que la fecha de inicio no sea menor a la fecha de hoy en la actualización del precio. AAML-23/09/2017-Inicio
+                {
+                    MessageBox.Show("Error: La fecha de inicio no puede ser menor a la fecha de Hoy. ", "¡ Error !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    dtFechaInicio.Text = fechaHoy.ToShortDateString();
+                    return;
+                }
+                if (hidIdPrecio.Text == "" && lblBanderaNuevo.Text != "N" || hidIdPrecio.Text != "" && lblBanderaNuevo.Text == "N")
                 {
                     int filas = new BusProductos().RegistrarPrecioProductos(lblClaveProducto.Text, Convert.ToDouble(txtPrecioCompra.Text), Convert.ToDouble(txtPrecioVenta.Text), dtFechaInicio.Value, dtFechaFin.Value);
                     if(lblBanderaNuevo.Text=="N" && dtFechaInicio.Value == fechaHoy)
                     {
-                        int rows = new BusProductos().CierraVigenciaPrecio(DateTime.Today, lblClaveProducto.Text, Convert.ToInt32(HidIdProducto.Text));
+                        int rows = new BusProductos().CierraVigenciaPrecio(DateTime.Today, lblClaveProducto.Text, Convert.ToInt32(hidIdPrecio.Text));
                         if (rows == 0)
                         {
                             MessageBox.Show("Ocurrio un error al cerrar la vigencia del precio anterior del Producto: "+lblClaveProducto.Text+"", "¡ Error !", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -64,7 +77,7 @@ namespace SISCOMIC_DESKTOP
                     }
                     else if (lblBanderaNuevo.Text == "N" && dtFechaInicio.Value > fechaHoy)
                     {
-                        int rows = new BusProductos().CierraVigenciaPrecio(dtFechaInicio.Value, lblClaveProducto.Text, Convert.ToInt32(HidIdProducto.Text));
+                        int rows = new BusProductos().CierraVigenciaPrecio(dtFechaInicio.Value, lblClaveProducto.Text, Convert.ToInt32(hidIdPrecio.Text));
                         if (rows == 0)
                         {
                             MessageBox.Show("Ocurrio un error al cerrar la vigencia del precio anterior del Producto: " + lblClaveProducto.Text + "", "¡ Error !", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -75,7 +88,7 @@ namespace SISCOMIC_DESKTOP
                         int idPrecio = new BusProductos().ObtenerUltimoPrecioId(lblClaveProducto.Text);
                         if (idPrecio > 0)
                         {
-                            HidIdProducto.Text = idPrecio.ToString();
+                            hidIdPrecio.Text = idPrecio.ToString();
                         }
                         else
                         {
@@ -89,9 +102,9 @@ namespace SISCOMIC_DESKTOP
                         MessageBox.Show("No se pudo Registrar el precio del Producto: ", "¡ Error !", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                else if (HidIdProducto.Text != "" && lblBanderaNuevo.Text != "N")
+                else if (hidIdPrecio.Text != "" && lblBanderaNuevo.Text != "N")
                 {
-                    int filas = new BusProductos().ActualizarPrecioProductos(Convert.ToInt32(HidIdProducto.Text), lblClaveProducto.Text, Convert.ToDouble(txtPrecioCompra.Text), Convert.ToDouble(txtPrecioVenta.Text), dtFechaInicio.Value, dtFechaFin.Value);
+                    int filas = new BusProductos().ActualizarPrecioProductos(Convert.ToInt32(hidIdPrecio.Text), lblClaveProducto.Text, Convert.ToDouble(txtPrecioCompra.Text), Convert.ToDouble(txtPrecioVenta.Text), dtFechaInicio.Value, dtFechaFin.Value);
                     if (filas > 0)
                     {
                         MessageBox.Show("Precio Actualizado con Éxito: ", "¡ Información !", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -139,7 +152,7 @@ namespace SISCOMIC_DESKTOP
                 if (bol == true)
                 {
                     List<string> lst = new BusProductos().ObtenerPrecio(lblClaveProducto.Text);
-                    HidIdProducto.Text = lst[0];
+                    hidIdPrecio.Text = lst[0];
                 }
                 txtPrecioVenta.Enabled = true;
                 dtFechaFin.Enabled = true;
@@ -220,7 +233,7 @@ namespace SISCOMIC_DESKTOP
             if (bol == true)
             {
                 List<string> lst = new BusProductos().ObtenerPrecio(lblClaveProducto.Text);
-                HidIdProducto.Text = lst[0];
+                hidIdPrecio.Text = lst[0];
                 txtPrecioCompra.Text = lst[1];
                 txtPrecioVenta.Text = lst[2];
                 fechaInicio = Convert.ToDateTime(lst[3]);
@@ -235,7 +248,7 @@ namespace SISCOMIC_DESKTOP
             }
             else
             {
-                HidIdProducto.Text = "";
+                hidIdPrecio.Text = "";
             }
             }
         }

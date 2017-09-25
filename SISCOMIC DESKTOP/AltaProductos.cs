@@ -442,7 +442,7 @@ namespace SISCOMIC_DESKTOP
             if (bol == true)
             {
                 List<string> lst = new BusProductos().ObtenerPrecio(txtClave.Text);
-                ap.HidIdProducto.Text = lst[0];
+                ap.hidIdPrecio.Text = lst[0];
                 ap.txtPrecioCompra.Text = lst[1];
                 ap.txtPrecioVenta.Text = lst[2];
                 fechaInicio = Convert.ToDateTime(lst[3]);
@@ -457,7 +457,7 @@ namespace SISCOMIC_DESKTOP
             }
             else
             {
-                ap.HidIdProducto.Text = "";
+                ap.hidIdPrecio.Text = "";
             }
 
             ap.lblClaveProducto.Text = txtClave.Text;
