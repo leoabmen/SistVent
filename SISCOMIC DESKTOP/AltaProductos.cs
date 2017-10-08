@@ -544,7 +544,10 @@ namespace SISCOMIC_DESKTOP
 
         private void btnDescuentos_Click(object sender, EventArgs e)
         {
-
+            DescuentoProductos dp = new DescuentoProductos();
+            dp.txtClave.Text = txtClave.Text;
+            dp.txtDescripcion.Text = txtDescripcion.Text;
+            dp.ShowDialog();
         }
 
     }

@@ -44,3 +44,4 @@ C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCO
 C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Venta_de_Contado.resources
 C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.Ventas.resources
 C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC DESKTOP.csproj.GenerateResource.Cache
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\SISCOMIC DESKTOP\obj\Debug\SISCOMIC_DESKTOP.DescuentoProductos.resources

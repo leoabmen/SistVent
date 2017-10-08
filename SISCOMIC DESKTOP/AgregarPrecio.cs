@@ -19,7 +19,7 @@ namespace SISCOMIC_DESKTOP
         public AgregarPrecio()
         {
             InitializeComponent();
-            
+            dtFechaInicio.Text = fechaHoy.ToShortDateString();
             dtFechaFin.Text = fechaAño.ToShortDateString();
         }
         private void AgregarPrecio_Load(object sender, EventArgs e)
