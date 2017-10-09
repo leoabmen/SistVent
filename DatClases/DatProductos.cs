@@ -114,10 +114,24 @@ namespace Stmx.Siscomic.Data
             dt = new DatComandos().ConsultasComando(strSql);
             return dt;
         }
+        public DataTable ValidarDescuento(string clave)
+        {
+            DataTable dt = new DataTable();
+            strSql = "SELECT COUNT(DESC_ID)CANTIDAD FROM DESCUENTOS_PRODUCTOS WHERE DESC_PROD_ID = '" + clave + "'";
+            dt = new DatComandos().ConsultasComando(strSql);
+            return dt;
+        }
         public DataTable ObtenerPrecio(string clave)
         {
             DataTable dt = new DataTable();
             strSql = "CALL GET_PRECIO('" + clave + "')";
+            dt = new DatComandos().ConsultasComando(strSql);
+            return dt;
+        }
+        public DataTable ObtenerDescuento(string clave)
+        {
+            DataTable dt = new DataTable();
+            strSql = "CALL GET_DESCUENTO('" + clave + "')";
             dt = new DatComandos().ConsultasComando(strSql);
             return dt;
         }

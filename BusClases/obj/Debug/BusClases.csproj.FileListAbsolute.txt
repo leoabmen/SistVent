@@ -7,3 +7,12 @@ C:\Leonel\SISCOMIC DESKTOP\BusClases\bin\Debug\EntClases.pdb
 C:\Leonel\SISCOMIC DESKTOP\BusClases\obj\Debug\BusClases.csprojResolveAssemblyReference.cache
 C:\Leonel\SISCOMIC DESKTOP\BusClases\obj\Debug\BusClases.dll
 C:\Leonel\SISCOMIC DESKTOP\BusClases\obj\Debug\BusClases.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\bin\Debug\BusClases.dll
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\bin\Debug\BusClases.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\bin\Debug\DatClases.dll
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\bin\Debug\EntClases.dll
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\bin\Debug\DatClases.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\bin\Debug\EntClases.pdb
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\obj\Debug\BusClases.csprojResolveAssemblyReference.cache
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\obj\Debug\BusClases.dll
+C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\BusClases\obj\Debug\BusClases.pdb

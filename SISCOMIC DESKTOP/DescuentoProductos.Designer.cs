@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DescuentoProductos));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbDescuentos = new System.Windows.Forms.TabPage();
+            this.hidPorcId = new System.Windows.Forms.Label();
             this.btnNuevoDesc = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -109,12 +110,14 @@
             // tbDescuentos
             // 
             this.tbDescuentos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tbDescuentos.Controls.Add(this.hidPorcId);
             this.tbDescuentos.Controls.Add(btnEditar);
             this.tbDescuentos.Controls.Add(this.btnNuevoDesc);
             this.tbDescuentos.Controls.Add(this.btnGuardar);
             this.tbDescuentos.Controls.Add(this.btnCancelar);
             this.tbDescuentos.Controls.Add(this.groupBox4);
             this.tbDescuentos.Controls.Add(this.groupBox5);
+            this.tbDescuentos.Cursor = System.Windows.Forms.Cursors.Default;
             this.tbDescuentos.Location = new System.Drawing.Point(4, 22);
             this.tbDescuentos.Name = "tbDescuentos";
             this.tbDescuentos.Padding = new System.Windows.Forms.Padding(3);
@@ -123,6 +126,15 @@
             this.tbDescuentos.Text = "Descuentos";
             this.tbDescuentos.ToolTipText = "Agregar Descuento al Producto Seleccionado";
             this.tbDescuentos.UseVisualStyleBackColor = true;
+            // 
+            // hidPorcId
+            // 
+            this.hidPorcId.AutoSize = true;
+            this.hidPorcId.Location = new System.Drawing.Point(8, 3);
+            this.hidPorcId.Name = "hidPorcId";
+            this.hidPorcId.Size = new System.Drawing.Size(52, 13);
+            this.hidPorcId.TabIndex = 17;
+            this.hidPorcId.Text = "hidPorcId";
             // 
             // btnNuevoDesc
             // 
@@ -295,6 +307,7 @@
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel1.Location = new System.Drawing.Point(12, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1026, 172);
@@ -325,19 +338,20 @@
             this.lblPorcentajeActual.AutoSize = true;
             this.lblPorcentajeActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcentajeActual.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.lblPorcentajeActual.Location = new System.Drawing.Point(19, 17);
+            this.lblPorcentajeActual.Location = new System.Drawing.Point(-1, 17);
             this.lblPorcentajeActual.Name = "lblPorcentajeActual";
             this.lblPorcentajeActual.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblPorcentajeActual.Size = new System.Drawing.Size(80, 55);
             this.lblPorcentajeActual.TabIndex = 11;
             this.lblPorcentajeActual.Text = "50";
+            this.lblPorcentajeActual.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label9.Location = new System.Drawing.Point(94, 17);
+            this.label9.Location = new System.Drawing.Point(98, 17);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 55);
             this.label9.TabIndex = 12;
@@ -525,6 +539,7 @@
             this.Load += new System.EventHandler(this.DescuentoProductos_Load);
             this.tabControl1.ResumeLayout(false);
             this.tbDescuentos.ResumeLayout(false);
+            this.tbDescuentos.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -587,6 +602,7 @@
         private System.Windows.Forms.Button btnCancelar;
         public System.Windows.Forms.TextBox txtDescripcion;
         public System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.Label hidPorcId;
 
 
     }

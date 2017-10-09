@@ -544,10 +544,18 @@ namespace SISCOMIC_DESKTOP
 
         private void btnDescuentos_Click(object sender, EventArgs e)
         {
+            bool validar = new BusProductos().ValidarPrecio(txtClave.Text);
+            if(validar==true)
+            {
             DescuentoProductos dp = new DescuentoProductos();
             dp.txtClave.Text = txtClave.Text;
             dp.txtDescripcion.Text = txtDescripcion.Text;
             dp.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Para poder agregar un porcentaje de descuento,"+"\n"+"primero debes asignar el precio a este producto.", "¡ Información !", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
 
     }
