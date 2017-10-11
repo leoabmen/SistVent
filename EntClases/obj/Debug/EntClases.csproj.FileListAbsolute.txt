@@ -5,10 +5,3 @@ C:\Leonel\SISCOMIC DESKTOP\EntClases\bin\Debug\DatClases.pdb
 C:\Leonel\SISCOMIC DESKTOP\EntClases\obj\Debug\EntClases.csprojResolveAssemblyReference.cache
 C:\Leonel\SISCOMIC DESKTOP\EntClases\obj\Debug\EntClases.dll
 C:\Leonel\SISCOMIC DESKTOP\EntClases\obj\Debug\EntClases.pdb
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\EntClases\bin\Debug\EntClases.dll
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\EntClases\bin\Debug\EntClases.pdb
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\EntClases\bin\Debug\DatClases.dll
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\EntClases\bin\Debug\DatClases.pdb
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\EntClases\obj\Debug\EntClases.csprojResolveAssemblyReference.cache
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\EntClases\obj\Debug\EntClases.dll
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\EntClases\obj\Debug\EntClases.pdb

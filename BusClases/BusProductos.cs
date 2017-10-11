@@ -162,17 +162,6 @@ namespace Stmx.Siscomic.Business
             }
             return validar;
         }
-        public Boolean ValidarDescuento(string clave)
-        {
-            Boolean validar = false;
-            DataTable dt = new DatProductos().ValidarDescuento(clave);
-            int cantidad = dt.Rows[0]["CANTIDAD"].ToString() == null ? 0 : Convert.ToInt32(dt.Rows[0]["CANTIDAD"].ToString());
-            if (cantidad > 0)
-            {
-                validar = true;
-            }
-            return validar;
-        }
         public List<string> ObtenerPrecio(string clave)
         {
             DataTable dt = new DatProductos().ObtenerPrecio(clave);
@@ -182,18 +171,6 @@ namespace Stmx.Siscomic.Business
             lst.Add(dt.Rows[0]["PREC_VENTA"].ToString() == null ? "" : dt.Rows[0]["PREC_VENTA"].ToString());
             lst.Add(dt.Rows[0]["PREC_FECH_INIC"].ToString() == null ? "" : dt.Rows[0]["PREC_FECH_INIC"].ToString());
             lst.Add(dt.Rows[0]["PREC_FECH_FIN"].ToString() == null ? "" : dt.Rows[0]["PREC_FECH_FIN"].ToString());
-            return lst;
-        }
-        public List<string> ObtenerDescuento(string clave)
-        {
-            DataTable dt = new DatProductos().ObtenerDescuento(clave);
-            List<string> lst = new List<string>();
-            lst.Add(dt.Rows[0]["PROD_ID"].ToString() == null ? "" : dt.Rows[0]["PROD_ID"].ToString());
-            lst.Add(dt.Rows[0]["PREC_VENTA"].ToString() == null ? "" : dt.Rows[0]["PREC_VENTA"].ToString());
-            lst.Add(dt.Rows[0]["DESC_ID"].ToString() == null ? "" : dt.Rows[0]["DESC_ID"].ToString());
-            lst.Add(dt.Rows[0]["DESC_PORC"].ToString() == null ? "0.0" : dt.Rows[0]["DESC_PORC"].ToString());
-            lst.Add(dt.Rows[0]["DESC_FECH_INIC"].ToString() == null ? "" : dt.Rows[0]["DESC_FECH_INIC"].ToString());
-            lst.Add(dt.Rows[0]["DESC_FECH_FIN"].ToString() == null ? "" : dt.Rows[0]["DESC_FECH_FIN"].ToString());
             return lst;
         }
         public int CierraVigenciaPrecio(DateTime fecha, string clave, int idPrecio)

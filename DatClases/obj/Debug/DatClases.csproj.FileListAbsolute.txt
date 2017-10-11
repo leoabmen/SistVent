@@ -6,11 +6,3 @@ C:\Leonel\SISCOMIC DESKTOP\DatClases\bin\Debug\MySql.Data.Entity.EF6.xml
 C:\Leonel\SISCOMIC DESKTOP\DatClases\obj\Debug\DatClases.csprojResolveAssemblyReference.cache
 C:\Leonel\SISCOMIC DESKTOP\DatClases\obj\Debug\DatClases.dll
 C:\Leonel\SISCOMIC DESKTOP\DatClases\obj\Debug\DatClases.pdb
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\bin\Debug\DatClases.dll
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\bin\Debug\DatClases.pdb
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\bin\Debug\MySql.Data.Entity.dll
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\bin\Debug\MySql.Data.Entity.EF6.dll
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\bin\Debug\MySql.Data.Entity.EF6.xml
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\obj\Debug\DatClases.csprojResolveAssemblyReference.cache
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\obj\Debug\DatClases.dll
-C:\Users\LEO\Documents\GITHUB PROJECTS\SistVent\DatClases\obj\Debug\DatClases.pdb
